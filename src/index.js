@@ -7,9 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, HashRouter} from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -18,3 +18,9 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+//git status
+// git add .
+// git commit -m "creating dev branch to keep development branch and deploying branch separate"
+// git push
+// npm run deploy
