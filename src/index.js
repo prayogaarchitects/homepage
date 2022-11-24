@@ -4,12 +4,12 @@ import './index.css';
 import './App.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {HashRouter} from 'react-router-dom';
+import {BrowserRouter, HashRouter} from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -27,12 +27,12 @@ const App = () => {
     <div>
       <Navigation />
       <Routes>
-        <Route exact path="/" element={<Header data={landingPageData.Header}/>}></Route>
-        <Route path="about" element={<About data={landingPageData.About} />}></Route>
-        <Route path="ourservices" element={<Features data={landingPageData.Features}/>}></Route>
-        <Route path="gallery" element={<Gallery data={landingPageData.Gallery}/>}></Route>
-        <Route path="contact" element={<Contact data={landingPageData.Contact}/>}></Route>
-        <Route path="gallery/:id" element={<ImagesView data={landingPageData.Gallery}/>} />
+        <Route exact path="/homepage" element={<Header data={landingPageData.Header}/>}></Route>
+        <Route path="/homepage/about" element={<About data={landingPageData.About} />}></Route>
+        <Route path="/homepage/ourservices" element={<Features data={landingPageData.Features}/>}></Route>
+        <Route path="/homepage/gallery" element={<Gallery data={landingPageData.Gallery}/>}></Route>
+        <Route path="/homepage/contact" element={<Contact data={landingPageData.Contact}/>}></Route>
+        <Route path="/homepage/gallery/:id" element={<ImagesView data={landingPageData.Gallery}/>} />
       </Routes>
     {/*         
       <Header data={landingPageData.Header} />
